@@ -1,0 +1,40 @@
+# Node
+node_modules
+npm-debug.log*
+
+# Build output (will be rebuilt inside the image)
+dist
+dist-ssr
+build
+
+# Python
+**/__pycache__
+*.py[cod]
+*.pyc
+.venv
+venv
+env
+
+# Local SQLite DB (Cloud Run 컨테이너는 휘발성이라 의미 없음)
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+
+# Secrets — env vars는 gcloud --set-env-vars 또는 Secret Manager로 주입
+.env
+.env.*
+backend/.env
+
+# Editor / OS
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.swp
+
+# Git
+.git
+.gitignore
+
+# Docs
+README.md
